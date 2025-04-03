@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Task Manager</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search tasks...">
+        </div>
+        <div class="board">
+            <div class="column" id="todo">
+                <h2>To-Do</h2>
+                <div class="tasks" id="todo-tasks"></div>
+                <button class="add-btn" onclick="addTask('todo')">+ Add Task</button>
+            </div>
+            <div class="column" id="in-progress">
+                <h2>In Progress</h2>
+                <div class="tasks" id="in-progress-tasks"></div>
+                <button class="add-btn" onclick="addTask('in-progress')">+ Add Task</button>
+            </div>
+            <div class="column" id="done">
+                <h2>Done</h2>
+                <div class="tasks" id="done-tasks"></div>
+                <button class="add-btn" onclick="addTask('done')">+ Add Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
